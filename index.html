@@ -460,7 +460,11 @@
           <div class="card-foot field">
             <span class="label">Outcome</span>
             <p>Consistent, rule-checked panel drawings straight from project data: drafting time cut to roughly a fifth (hours of manual CAD down to minutes plus small corrections). Deterministic output means drawings are reproducible, diffable, and reviewable, and the lint gate stops malformed schematics before the shop floor.</p>
-            <a class="demo-btn" style="margin-top:10px" href="https://github.com/salihibrahimuslucan/spec2schematic" target="_blank" rel="noopener">Open-source clean-room spin-off →</a>
+            <p style="margin-top:8px">The open-source spin-off adds a FastAPI service, a browser demo, and an MCP server so any MCP-aware client can generate a schematic directly.</p>
+            <div style="margin-top:10px;display:flex;gap:10px;flex-wrap:wrap">
+              <a class="demo-btn" href="https://spec2schematic.onrender.com" target="_blank" rel="noopener">Live demo →</a>
+              <a class="demo-btn" href="https://github.com/salihibrahimuslucan/spec2schematic" target="_blank" rel="noopener">Source on GitHub →</a>
+            </div>
           </div>
         </article>
 
@@ -510,6 +514,29 @@
           </div>
           <div class="card-foot">
             <a class="demo-btn" href="https://github.com/salihibrahimuslucan/aquaops-n8n-bot" target="_blank" rel="noopener">Source on GitHub →</a>
+          </div>
+        </article>
+
+        <!-- AI Microservice Stack -->
+        <article class="card">
+          <span class="card-tag">AI · Microservice</span>
+          <h3>AI Microservice Stack — Tool-Use, RAG &amp; Evals</h3>
+          <div class="field">
+            <span class="label">Problem</span>
+            <p>Wanted a single, coherent stack demonstrating the core building blocks of a production AI service, rather than four disconnected demos.</p>
+          </div>
+          <div class="field">
+            <span class="label">What I built</span>
+            <p>A containerized FastAPI service with two endpoints: an <strong>LLM tool-calling agent loop</strong> that turns a free-text spec into a structured bill of materials, and a <strong>RAG endpoint</strong> that answers questions from a Postgres/pgvector store with cited sources (or an honest "not in context" instead of guessing). Provider-agnostic through the <strong>OpenAI SDK</strong> against OpenAI or Gemini's OpenAI-compatible endpoint. An <strong>LLM eval harness</strong> scores both endpoints against golden test cases and gates CI on regressions. Every path is mock-testable offline with zero API key or database.</p>
+          </div>
+          <span class="label" style="display:block;margin-bottom:4px;">Stack</span>
+          <div class="pills">
+            <span class="pill">FastAPI</span><span class="pill">Docker Compose</span>
+            <span class="pill">Postgres / pgvector</span><span class="pill">OpenAI SDK</span>
+            <span class="pill">LLM evals</span><span class="pill">n8n</span>
+          </div>
+          <div class="card-foot">
+            <a class="demo-btn" href="https://github.com/salihibrahimuslucan/ai-service-stack" target="_blank" rel="noopener">Source on GitHub →</a>
           </div>
         </article>
 
