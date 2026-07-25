@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Salih İbrahim Uslucan — AI Automation & Integration Engineer</title>
-  <meta name="description" content="Electronics & communication engineer (Kocaeli University, 2026) building AI-driven automation in daily production use: LLM agent pipelines, native C++ DMX/RDM, CAD automation, multi-user ERP. Open to remote AI automation / integration work." />
+  <title>Salih İbrahim Uslucan — Automation &amp; Software Engineer · Fountains &amp; Show Systems</title>
+  <meta name="description" content="Electronics &amp; communication engineer (Kocaeli University, 2026) working where software meets real hardware and real customers: musical fountains and interactive water features. Browser show simulation (three.js/WebGL2), CAD automation, native C++ DMX/RDM, multi-user ERP, LLM agent pipelines. Open to remote work." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -379,14 +379,15 @@
     <div class="wrap">
       <span class="eyebrow">Remote · Freelance</span>
       <h1>Salih İbrahim Uslucan</h1>
-      <p class="tagline">AI Automation &amp; Integration Engineer</p>
+      <p class="tagline">Automation &amp; Software Engineer &nbsp;·&nbsp; Fountains &amp; Show Systems</p>
       <p class="intro">
-        I'm an electronics &amp; communication engineer (Kocaeli University, 2026) building
-        <strong>AI-driven automation in daily production use</strong>. I run LLM agents with
-        production-grade discipline: spec-driven generation, golden-test freezes, lint gates.
-        At Aquatronic I move across the whole project: I write the software, wire the electrical panels,
-        and sit in on customer conversations. That range is what I bring to
-        <strong>AI automation / integration</strong> work, remote.
+        I'm an electronics &amp; communication engineer (Kocaeli University, 2026) working where
+        <strong>software meets real hardware and real customers</strong> — musical fountains and
+        interactive water features. I move across the whole project: I write the software, wire the
+        electrical panels, and sit in on customer conversations. Lately that includes a
+        <strong>browser engine that shows a customer their fountain before it is built</strong>.
+        I run LLM agents with production discipline: spec-driven generation, golden-test freezes,
+        lint gates.
       </p>
 
       <div class="chips">
@@ -409,11 +410,40 @@
     <div class="wrap">
       <div class="section-head">
         <p class="kicker">Selected Work</p>
-        <h2>Five tools built at Aquatronic</h2>
-        <p>Real, in-use software for an industrial fountain &amp; water-feature systems company: software, protocols, data, and electrical-panel automation. Impact is stated factually, and several projects are intentionally qualitative.</p>
+        <h2>Six tools from the fountain floor</h2>
+        <p>Real, in-use software from an industrial fountain &amp; water-feature company: simulation, protocols, data, and electrical-panel automation. Impact is stated factually, and several projects are intentionally qualitative.</p>
       </div>
 
       <div class="cards">
+
+        <!-- Show Studio -->
+        <article class="card">
+          <span class="card-tag">Simulation · WebGL</span>
+          <h3>Show Studio — Fountain Show Preview Engine</h3>
+          <div class="field">
+            <span class="label">Problem</span>
+            <p>In this industry customers buy from drawings and contracts, then wait months to see their fountain for the first time. Commercial show-design suites can render it beautifully, but they cost thousands, need a serious GPU, and are aimed at the programming phase — not the moment you are trying to win the job.</p>
+          </div>
+          <div class="field">
+            <span class="label">What I built</span>
+            <p>A <strong>browser-based preview engine</strong> for the quoting stage. Import the customer's real site plan (<strong>DXF or PNG</strong>, parsed in a streaming Web Worker so 2&nbsp;MB+ files never freeze the tab), place catalogue hardware by click, generate choreography from an audio track (<strong>FFT beat grid, band split, section detection</strong>), play the show back in 3D and export a branded video. Devices are modelled from real hardware behaviour — jet ballistics from flow and nozzle diameter, under-nozzle ring LEDs that light the water column from inside and cast a caustic pool, RGBW mixing where the white channel screens over the hue instead of washing it out.</p>
+          </div>
+          <span class="label" style="display:block;margin-bottom:4px;">Stack</span>
+          <div class="pills">
+            <span class="pill">three.js</span><span class="pill">WebGL2</span><span class="pill">GLSL</span>
+            <span class="pill">Web Workers</span><span class="pill">Web Audio / FFT</span>
+            <span class="pill">DXF parsing</span><span class="pill">MediaRecorder</span>
+            <span class="pill">no framework, no CDN</span>
+          </div>
+          <div class="card-foot field">
+            <span class="label">Outcome</span>
+            <p>A running engine: ~30 modules, <strong>522 automated tests</strong>, plus a pixel-diff gate that catches visual regressions a green test suite would miss. Everything is static files — it deploys anywhere and needs nothing installed.</p>
+            <div style="margin-top:10px;display:flex;gap:10px;flex-wrap:wrap">
+              <a class="demo-btn" href="https://salihibrahimuslucan.github.io/fountain-show-studio/" target="_blank" rel="noopener">Live demo →</a>
+              <a class="demo-btn" href="https://github.com/salihibrahimuslucan/fountain-show-studio" target="_blank" rel="noopener">Source on GitHub →</a>
+            </div>
+          </div>
+        </article>
 
         <!-- AquaCONFIG v2 -->
         <article class="card">
